@@ -20,9 +20,12 @@ return {
         local lsp_zero = require('lsp-zero')
 
         lsp_zero.on_attach(function(client, bufnr)
-          local opts = {buffer = bufnr, remap = false}
+            local opts = {buffer = bufnr, remap = false}
+            vim.keymap.set("n", "gd", require("telescope.builtin").lsp_definitions, { desc = 'Go to definition' })
+            vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { desc = 'Go to references' })
+            vim.keymap.set("n", "gi", require("telescope.builtin").lsp_implementations, { desc = 'Go to implementation' })
 
-          vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+          -- vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
           vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
         end)
 
