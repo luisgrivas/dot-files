@@ -1,0 +1,19 @@
+# [general]
+import = ["~/.config/alacritty/nordic.toml"]
+
+[window]
+title = "LuFeg"
+decorations = "Buttonless"
+padding = {x = 10, y = 10}
+dynamic_padding = true
+# option_as_alt = "OnlyLeft"
+option_as_alt = "Both"
+startup_mode = "Windowed"
+
+[mouse]
+hide_when_typing = false
+
+[font]
+normal = { family = "CodeNewRoman Nerd Font", style = "Regular"}
+bold = { family = "CodeNewRoman Nerd Font", style = "Regular"}
+size = 13
