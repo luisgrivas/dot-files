@@ -6,7 +6,7 @@ bold_italic_font Hack Nerd Font Mono Italic
 
 font_size 12.0
 
-# background_opacity 1.0
+background_opacity 0.5
 
 # Bells
 enable_audio_bell  no
@@ -48,7 +48,7 @@ map cmd+v        paste_from_clipboard
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine
-include current-theme.conf
+# Tokio Night 
+include tokyo-night-storm.conf
 # END_KITTY_THEME
 #
