@@ -16,12 +16,14 @@ return {
         dotfiles = false,
         custom = {".git", "DS_Store"},
       },
+    view = { adaptive_size = true },
     git = {
         ignore = false
     },
     actions = {
         open_file = {
-            quit_on_open = true
+            quit_on_open = true,
+            window_picker = { enable = false }
         }
     }
     })
